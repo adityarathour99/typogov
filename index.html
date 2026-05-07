@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypoGov - Professional Exam Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font face for Krutidev 010 (Simulated via a lookalike or standard mapping logic) */
+        @font-face {
+            font-family: 'Krutidev010';
+            src: url('https://fonts.cdnfonts.com/s/14873/Krutidev010.woff') format('woff');
+        }
+        .font-krutidev { font-family: 'Krutidev010', sans-serif; }
+        .font-mangal { font-family: 'Noto Sans Devanagari', sans-serif; }
+        
+        /* Prevent selection in exam area */
+        .no-select {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Highlighting styles */
+        .current-word { background-color: #fde047; }
+        .correct-word { color: #16a34a; }
+        .incorrect-word { color: #dc2626; text-decoration: underline; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "jspdf": "https://esm.sh/jspdf@^4.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased font-['Inter']">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
